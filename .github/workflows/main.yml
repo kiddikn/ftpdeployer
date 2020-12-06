@@ -17,4 +17,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }} 
           local-dir: ./                           
           server-dir: "otake-slsc.org/public_html/ftpdeployer/"
-          exclude: .github*/**
+          exclude: .git*
+            - .git*/**
+            -  **/.git*/**
+            - .github*
+            - .github*/**
+            -  **/.github*/**
